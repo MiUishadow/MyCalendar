@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">自制日历</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置开学日期</string>
+    <string name="action_weeknum">设置上课时间</string>
+    <string name="action_exit">退出</string>
+    <string name="datepick_title">设置开学日期</string>
+    <string name="action_setDetail">设置日程</string>
+</resources>

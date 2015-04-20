@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+
+    android:divider="@drawable/bg_divider"
+    android:showDividers="middle"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="取消"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="本地日历"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+
+            />
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/s_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:background="@drawable/bg_edittext"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+
+        android:hint="活动提醒"
+
+        >
+        <requestFocus/>
+        </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="每周重复"
+            />
+
+        <Switch
+            android:id="@+id/rep_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+
+            android:textOff="否"
+            android:textOn="是"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="单周重复"
+            />
+
+        <Switch
+            android:id="@+id/rep_boddweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+
+            android:textOff="否"
+            android:textOn="是"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="双周重复"
+            />
+
+        <Switch
+            android:id="@+id/rep_doubweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+
+            android:textOff="否"
+            android:textOn="是"
+
+
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="开始时间"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:textSize="20dp"
+                android:text="2015年3月15日"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="30dp"
+                android:text=">"
+                />
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        >
+
+        <TextView
+            android:id="@+id/label_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="结束时间"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textSize="20dp"
+            android:text="2015年3月15日"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="30dp"
+            android:text=">"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
